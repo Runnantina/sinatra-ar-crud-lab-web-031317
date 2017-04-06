@@ -1,0 +1,11 @@
+<!-- should render the @post's title and content. -->
+<h1>Title</h1>
+<p><%= @post.name %></p>
+<p><%= @post.content %></p>
+
+<form class="" action="/posts/<%=@post.id%>" method="POST">
+  <input id="hidden" type="hidden" name="_method" value="delete">
+
+  <button type="submit" name="delete">delete</button>
+
+</form>

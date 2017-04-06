@@ -1,0 +1,6 @@
+<!-- use erb to iterate over @posts and render them on the page. -->
+<h1>All Posts!</h1>
+<% @posts.each do |post| %>
+  <%= post.name %>
+  <%= post.content %>
+<% end%> 
